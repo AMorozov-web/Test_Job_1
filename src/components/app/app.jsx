@@ -1,13 +1,17 @@
 import React from 'react';
-import 'normalize.css';
 import {Header} from '../header/header';
+import {Main} from '../main/main';
+import 'normalize.css';
 
 import '../../sass/style.scss';
 
 const App = () => {
 
   return (
-    <Header />
+    <>
+      <Header />
+      <Main />
+    </>
   );
 };
 
