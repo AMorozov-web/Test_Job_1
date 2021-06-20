@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: local("Roboto-Bold"),
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-display: swap;
+  src: local("RobotoSlab-Bold"),
+    url("../fonts/RobotoSlab-Bold.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-display: swap;
+  src: local("RobotoSlab-Medium"),
+    url("../fonts/RobotoSlab-Medium.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  font-display: swap;
+  src: local("RobotoSlab-Regular"),
+    url("../fonts/RobotoSlab-Regular.woff2") format("woff2"),
+    url("../fonts/RobotoSlab-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-display: swap;
+  src: local("WorkSans-SemiBold"),
+    url("../fonts/WorkSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/WorkSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-display: swap;
+  src: local("WorkSans-Medium"),
+    url("../fonts/WorkSans-Medium.woff2") format("woff2"),
+    url("../fonts/WorkSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-display: swap;
+  src: local("WorkSans-Regular"),
+    url("../fonts/WorkSans-Regular.woff2") format("woff2"),
+    url("../fonts/WorkSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

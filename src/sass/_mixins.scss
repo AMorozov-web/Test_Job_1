@@ -1,0 +1,28 @@
+@mixin container {
+  min-width: 343px;
+  margin: 0 auto;
+}
+
+@mixin list-style-none {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin font-Roboto {
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+@mixin font-RobotoSlab {
+  font-family: "RobotoSlab", "Arial", sans-serif;
+}
+
+@mixin font-WorkSans {
+  font-family: "WorkSans", "Arial", sans-serif;
+}
+
+@mixin font-size ($size, $weight, $line-height) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+}

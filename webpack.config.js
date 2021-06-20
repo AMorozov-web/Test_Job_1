@@ -39,7 +39,6 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        exclude: /(node_modules)/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -80,10 +79,6 @@ module.exports = {
         {
           from: 'src/assets/img',
           to: 'img',
-        },
-        {
-          from: 'src/assets/css',
-          to: 'css',
         },
         {
           from: 'src/assets/fonts',
