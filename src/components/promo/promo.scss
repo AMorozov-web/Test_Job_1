@@ -1,0 +1,10 @@
+@import '../../sass/_mixins';
+
+.promo {
+  display: flex;
+  min-height: 253px;
+}
+
+.promo__container {
+  @include container;
+}
