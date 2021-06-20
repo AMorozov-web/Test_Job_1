@@ -4,7 +4,7 @@ import './main.scss';
 
 const Main = () => {
   return (
-    <main className="page-body__main">
+    <main className="main page-body__main">
       Main
     </main>
   );
