@@ -1,12 +1,13 @@
 import React from 'react';
 import 'normalize.css';
+import {Header} from '../header/header';
 
 import '../../sass/style.scss';
 
 const App = () => {
 
   return (
-    <h1>Working!</h1>
+    <Header />
   );
 };
 

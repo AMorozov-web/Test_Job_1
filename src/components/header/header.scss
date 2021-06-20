@@ -1,0 +1,11 @@
+@import '../../sass/_mixins';
+
+.header {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.header__container {
+  @include container;
+}
