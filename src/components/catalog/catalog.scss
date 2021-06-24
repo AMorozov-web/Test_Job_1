@@ -1,0 +1,13 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__title {
+  @include container;
+  @include font-RobotoSlab;
+  @include font-size(32px, 700, 42px);
+}
