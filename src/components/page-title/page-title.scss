@@ -1,0 +1,23 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.page-title {
+  display: flex;
+}
+
+.page-title__container {
+  @include container;
+}
+
+.page-title__heading {
+  @include font-RobotoSlab;
+  @include font-size(40px, 700, 53px);
+
+  margin: 0;
+  margin-bottom: 20px;
+  color: $godgray;
+}
+
+.page-title__span {
+  color: $amaranth;
+}

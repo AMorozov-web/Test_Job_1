@@ -1,0 +1,23 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.seo {
+  display: flex;
+}
+
+.seo__container {
+  @include container;
+}
+
+.seo__text {
+  @include font-WorkSans;
+  @include font-size(16px, 400, 21px);
+
+  display: block;
+  width: 327px;
+  margin: 0;
+}
+
+.seo__link {
+  color: $amaranth;
+}
