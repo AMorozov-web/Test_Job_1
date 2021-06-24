@@ -1,0 +1,61 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.advantages {
+  display: flex;
+}
+
+.advantages__container {
+  @include container;
+}
+
+.advantages__list {
+  @include list-style-none;
+
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, min-content);
+  column-gap: 16px;
+  row-gap: 30px;
+}
+
+.advantages__item {
+  width: 156px;
+  min-height: 84px;
+}
+
+.advantages__item-icon {
+  margin-bottom: 4px;
+  fill: $amaranth;
+}
+
+.advantages__item-title {
+  @include font-WorkSans;
+  @include font-size(14px, 600, 16px);
+
+  margin: 0;
+  color: $godgray;
+  text-align: center;
+}
+
+.advantages__item-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: $amaranth;
+
+    & .advantages__item-icon {
+      fill: $white;
+    }
+
+    & .advantages__item-title {
+      color: $white;
+    }
+  }
+}
+
