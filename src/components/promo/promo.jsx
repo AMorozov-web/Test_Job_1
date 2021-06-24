@@ -5,6 +5,9 @@ import './promo.scss';
 const Promo = () => {
   return (
     <section className="promo main__promo">
+      <h2 className="visually-hidden">
+        Promo Video
+      </h2>
       <div className="promo__container">
         <div className="promo__content">
           react-modal

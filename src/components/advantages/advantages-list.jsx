@@ -5,6 +5,9 @@ import './advantages-list.scss';
 const AdvantagesList = () => {
   return (
     <section className="advantages main__advantages">
+      <h2 className="visually-hidden">
+        Advantages
+      </h2>
       <div className="advantages__container">
         <ul className="advantages__list">
           <li className="advantages__item">
