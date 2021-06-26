@@ -1,0 +1,247 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  min-height: 687px;
+}
+
+.card__slider {
+  min-height: 238px;
+  margin-bottom: 17px;
+}
+
+.card__title {
+  @include container;
+  @include font-WorkSans;
+  @include font-size(20px, 600, 24px);
+
+  margin-bottom: 10px;
+  color: $godgray;
+}
+
+.card__size {
+  @include container;
+  @include font-WorkSans;
+  @include font-size(12px, 500, 14px);
+
+  margin-bottom: 20px;
+  color: $godgray;
+}
+
+.card__size-span {
+  color: $dovegrey;
+}
+
+.card__options-container {
+  @include container;
+
+  flex-direction: column;
+  min-height: 174px;
+  margin-bottom: 10px;
+}
+
+.card__options-title {
+  @include font-WorkSans;
+  @include font-size(12px, 600, 14px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  min-height: 22px;
+  margin: 0;
+  color: $amaranth;
+  border-bottom: 1px solid $amaranth;
+  background-color: $alabaster;
+}
+
+.card__options-list {
+  @include list-style-none;
+
+  height: 152px;
+  background-color: $alabaster;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $gallery;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $amaranth;
+  }
+}
+
+.card__option {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 76px;
+  padding: 8px;
+
+  &:not(:first-child) {
+    border-top: 1px solid $gallery;
+  }
+}
+
+.card__option-img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+}
+
+.card__option-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 6px;
+}
+
+.card__option-title,
+.card__option-price {
+  margin: 0;
+}
+
+.card__option-title {
+  @include font-WorkSans;
+  @include font-size(14px, 600, 18px);
+
+  margin-bottom: 12px;
+}
+
+.card__option-price {
+  @include font-RobotoSlab;
+  @include font-size(12px, 500, 18px);
+
+  color: $amaranth;
+}
+
+.card__option-input {
+  position: fixed;
+}
+
+.card__option-label {
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-left: auto;
+}
+
+.card__option-span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/check-option.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: 1px solid $amaranth;
+  border-radius: 2px;
+  cursor: pointer;
+
+  .card__option-input:checked + & {
+    background-color: $amaranth;
+  }
+}
+
+.card__rent {
+  @include container;
+
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $alabaster;
+}
+
+.card__rent-title {
+  @include font-WorkSans;
+  @include font-size(14px, 400, 18px);
+
+  margin: 0;
+  margin-bottom: 12px;
+  color: $oslogray;
+}
+
+.card__rent-list {
+  @include list-style-none;
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card__rent-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 53px;
+  min-height: 26px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.card__rent-time-span {
+  @include font-WorkSans;
+  @include font-size(12px, 400, 18px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: $godgray;
+  background-color: $blackhaze;
+
+  .card__rent-time-input:checked + & {
+    color: $white;
+    background-color: $amaranth;
+  }
+}
+
+.card__wrapper {
+  @include container;
+
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40px;
+}
+
+.card__price {
+  @include font-RobotoSlab;
+  @include font-size(32px, 500, 42px);
+
+  margin: 0;
+  color: $godgray;
+}
+
+.card__btn {
+  @include font-Roboto;
+  @include font-size(18px, 700, 21px);
+
+  width: 167px;
+  min-height: 40px;
+  color: $white;
+  background-color: $amaranth;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $amaranth;
+    background-color: $white;
+    border: 1px solid $amaranth;
+  }
+}

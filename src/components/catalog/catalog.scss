@@ -43,6 +43,7 @@
   background-position: right center;
   color: $oslogray;
   border: none;
+  cursor: pointer;
 }
 
 .catalog__list {
@@ -52,4 +53,12 @@
   flex-direction: column;
   width: 360px;
   margin: 0 auto;
+}
+
+.catalog__item {
+  box-shadow: 0px 4px 20px $mercury;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }

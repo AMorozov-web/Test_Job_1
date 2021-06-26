@@ -1,11 +1,20 @@
 import React from 'react';
-import {SORT_OPTIONS} from '../../const';
+import {Card} from '../card/card';
+import {SORT_OPTIONS, CARDS} from '../../const';
 
 import './catalog.scss';
 
-const getOption = (option) => {
+const getSortOption = (option) => {
   return (
     <option key={option.value} value={option.value}>{option.text}</option>
+  );
+};
+
+const getCatalogItem = (item) => {
+  return (
+    <li key={item.title} className="catalog__item">
+      <Card card={item}/>
+    </li>
   );
 };
 
@@ -19,11 +28,11 @@ const Catalog = () => {
       <div className="catalog__sort">
         <label className="catalog__sort-title" htmlFor="sort-select">Сортировка:</label>
         <select className="catalog__sort-select" id="sort-select" defaultValue="default">
-          {SORT_OPTIONS.map(getOption)}
+          {SORT_OPTIONS.map(getSortOption)}
         </select>
       </div>
       <ul className="catalog__list">
-        list
+        {CARDS.map(getCatalogItem)}
       </ul>
     </section>
   );
