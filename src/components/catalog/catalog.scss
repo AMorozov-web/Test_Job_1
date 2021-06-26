@@ -10,4 +10,46 @@
   @include container;
   @include font-RobotoSlab;
   @include font-size(32px, 700, 42px);
+
+  margin-bottom: 20px;
+  color: $godgray;
+}
+
+.catalog__sort {
+  @include container;
+
+  margin-bottom: 19px;
+  align-items: center
+}
+
+.catalog__sort-title {
+  @include font-WorkSans;
+  @include font-size(14px, 500, 16px);
+
+  margin-right: 5px;
+}
+
+.catalog__sort-select {
+  @include font-WorkSans;
+  @include font-size(14px, 500, 16px);
+
+
+  width: 130px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../img/sort-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  color: $oslogray;
+  border: none;
+}
+
+.catalog__list {
+  @include list-style-none;
+
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin: 0 auto;
 }
