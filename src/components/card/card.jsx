@@ -1,9 +1,9 @@
 import React from 'react';
 import {
   cardPropsValidation,
-  CARD_OPTIONS,
   RENTAL_TIME,
 } from '../../const';
+import {CARD_OPTIONS} from '../../mocks';
 
 import './card.scss';
 

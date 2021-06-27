@@ -1,6 +1,7 @@
 import React from 'react';
 import {Card} from '../card/card';
-import {SORT_OPTIONS, CARDS} from '../../const';
+import {SORT_OPTIONS} from '../../const';
+import {CARDS} from '../../mocks';
 
 import './catalog.scss';
 
