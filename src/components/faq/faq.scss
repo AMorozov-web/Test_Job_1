@@ -1,0 +1,83 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.faq {
+  display: flex;
+}
+
+.faq__container {
+  @include container;
+
+  flex-direction: column;
+}
+
+.faq__subtitle {
+  @include font-Montserrat;
+  @include font-size(16px, 400, 19px);
+
+  margin: 0;
+  color: $amaranth;
+}
+
+.faq__title {
+  @include font-RobotoSlab;
+  @include font-size(32px, 700, 42px);
+
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.faq__list {
+  @include list-style-none;
+}
+
+.faq__item {
+  min-height: 48px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.faq__item-summary {
+  @include font-Montserrat;
+  @include font-size(15px, 500, 19px);
+
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  margin-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: $godgray;
+  background-color: $alabaster;
+  background-image: url("../img/sum-close.svg");
+  background-repeat: no-repeat;
+  background-position: center right 8px;
+  box-shadow: 0px 4px 20px $mercury;
+  border-radius: 4px;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__item-details[open] & {
+    color: $white;
+    background-color: $amaranth;
+    background-image: url("../img/sum-open.svg");
+    box-shadow: none;
+  }
+}
+
+.faq__item-answer {
+  @include font-Montserrat;
+  @include font-size(14px, 500, 16px);
+
+  padding-left: 9px;
+  color: $dovegrey;
+  border-left: 1px solid $amaranth;
+}
