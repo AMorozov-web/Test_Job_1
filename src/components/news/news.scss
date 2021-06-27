@@ -1,0 +1,57 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.news {
+  display: flex;
+}
+
+.news__container {
+  @include container;
+
+  flex-direction: column;
+}
+
+.news__subtitle {
+  @include font-WorkSans;
+  @include font-size(16px, 400, 19px);
+
+  margin: 0;
+  color: $amaranth;
+}
+
+.news__title {
+  @include font-RobotoSlab;
+  @include font-size(32px, 700, 36px);
+
+  margin: 0;
+  margin-bottom: 20px;
+  color: $godgray;
+}
+
+.news__list {
+  @include list-style-none;
+
+  margin-bottom: 30px;
+}
+
+.news__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.news__btn {
+  @include font-Roboto;
+  @include font-size(18px, 700, 18px);
+
+  min-height: 40px;
+  color: $amaranth;
+  background-color: $white;
+  border-radius: 6px;
+  border: 1px solid $amaranth;
+  cursor: pointer;
+
+  &:hover,
+  &focus {
+    color: $white;
+    background-color: $amaranth;
+  }
+}

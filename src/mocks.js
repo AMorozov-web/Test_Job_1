@@ -22,8 +22,16 @@ const FAQ_ITEMS = Array(7).fill().map((_, i) => {
   };
 });
 
+const NEWS = Array(20).fill().map((_, i) => {
+  return {
+    title: `Фотобудки, GIF стойка #${i + 1}`,
+    date: `${i + 1} Марта 2021`,
+  };
+});
+
 export {
   CARD_OPTIONS,
   CARDS,
   FAQ_ITEMS,
+  NEWS,
 };

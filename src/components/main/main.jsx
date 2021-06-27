@@ -5,6 +5,7 @@ import {Seo} from '../seo/seo';
 import {AdvantagesList} from '../advantages/advantages-list';
 import {Catalog} from '../catalog/catalog';
 import {Faq} from '../faq/faq';
+import {News} from '../news/news';
 
 import './main.scss';
 
@@ -17,6 +18,7 @@ const Main = () => {
       <AdvantagesList />
       <Catalog />
       <Faq />
+      <News />
     </main>
   );
 };

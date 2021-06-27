@@ -29,8 +29,14 @@ const cardPropsValidation = PropTypes.shape({
   price: PropTypes.number.isRequired,
 }).isRequired;
 
+const newsPropsValidation = PropTypes.shape({
+  title: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+}).isRequired;
+
 export {
   SORT_OPTIONS,
   RENTAL_TIME,
   cardPropsValidation,
+  newsPropsValidation,
 };

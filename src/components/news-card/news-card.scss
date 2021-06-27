@@ -1,0 +1,58 @@
+@import '../../sass/_mixins';
+@import '../../sass/_variables';
+
+.news-card {
+  min-height: 479px;
+  padding-bottom: 20px;
+  background-color: $alabaster;
+}
+
+.news-card__img {
+  display: block;
+  width: 328px;
+  height: 328px;
+  margin-bottom: 20px;
+}
+
+.news-card__inner-wrapper {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.news-card__subtitle,
+.news-card__title,
+.news-card__text,
+.news-card__date {
+  margin: 0;
+}
+
+.news-card__subtitle {
+  @include font-WorkSans;
+  @include font-size(12px, 500, 14px);
+
+  color: $amaranth;
+  margin-bottom: 4px;
+}
+
+.news-card__title {
+  @include font-WorkSans;
+  @include font-size(20px, 600, 23px);
+
+  margin-bottom: 8px;
+  color: $godgray;
+}
+
+.news-card__text {
+  @include font-WorkSans;
+  @include font-size(12px, 500, 14px);
+
+  margin-bottom: 20px;
+  color: $godgray;
+}
+
+.news-card__date {
+  @include font-WorkSans;
+  @include font-size(12px, 500, 14px);
+
+  color: $dovegrey;
+}
