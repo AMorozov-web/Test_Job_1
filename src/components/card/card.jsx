@@ -10,7 +10,7 @@ import './card.scss';
 const getCardOptionElement = (option) => {
   return (
     <li key={option.title} className="card__option">
-      <img className="card__option-img" src="../img/photo-option.png" alt="Option photo" />
+      <img className="card__option-img" width="60" height="60" src="../img/photo-option.png" alt="Option photo" />
       <div className="card__option-wrapper">
         <p className="card__option-title">
           {option.title}
