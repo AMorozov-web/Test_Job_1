@@ -16,7 +16,7 @@
 
 .card__title {
   @include container;
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(20px, 600, 24px);
 
   margin-bottom: 10px;
@@ -25,7 +25,7 @@
 
 .card__size {
   @include container;
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(12px, 500, 14px);
 
   margin-bottom: 20px;
@@ -45,7 +45,7 @@
 }
 
 .card__options-title {
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(12px, 600, 14px);
 
   display: flex;
@@ -111,7 +111,7 @@
 }
 
 .card__option-title {
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(14px, 600, 18px);
 
   margin-bottom: 12px;
@@ -160,7 +160,7 @@
 }
 
 .card__rent-title {
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(14px, 400, 18px);
 
   margin: 0;
@@ -187,7 +187,7 @@
 }
 
 .card__rent-time-span {
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(12px, 400, 18px);
 
   display: flex;

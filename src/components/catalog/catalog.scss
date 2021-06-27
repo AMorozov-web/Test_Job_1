@@ -23,14 +23,14 @@
 }
 
 .catalog__sort-title {
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(14px, 500, 16px);
 
   margin-right: 5px;
 }
 
 .catalog__sort-select {
-  @include font-WorkSans;
+  @include font-Montserrat;
   @include font-size(14px, 500, 16px);
 
 
