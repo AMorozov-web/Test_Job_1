@@ -12,7 +12,7 @@
 }
 
 .faq__subtitle {
-  @include font-Montserrat;
+  @include font-WorkSans;
   @include font-size(16px, 400, 19px);
 
   margin: 0;
@@ -40,7 +40,7 @@
 }
 
 .faq__item-summary {
-  @include font-Montserrat;
+  @include font-WorkSans;
   @include font-size(15px, 500, 19px);
 
   display: flex;
@@ -74,7 +74,7 @@
 }
 
 .faq__item-answer {
-  @include font-Montserrat;
+  @include font-WorkSans;
   @include font-size(14px, 500, 16px);
 
   padding-left: 9px;

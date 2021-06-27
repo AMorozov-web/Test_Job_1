@@ -10,7 +10,7 @@
 }
 
 .seo__text {
-  @include font-Montserrat;
+  @include font-WorkSans;
   @include font-size(16px, 400, 21px);
 
   display: block;
