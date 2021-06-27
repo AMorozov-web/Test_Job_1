@@ -7,7 +7,7 @@ import './news.scss';
 const getNewsItemElement = (item) => {
 
   return (
-    <li className="news__item">
+    <li key={item.date} className="news__item">
       <NewsCard news={item} />
     </li>
   );
