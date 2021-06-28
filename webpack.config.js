@@ -51,7 +51,6 @@ module.exports = {
       },
       {
         test: /\.scss$/i,
-        exclude: /(node_modules)/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -88,6 +87,7 @@ module.exports = {
     }),
   ],
   resolve: {
+    modules: [path.resolve(__dirname, 'src'), path.resolve('node_modules')],
     extensions: ['.js', '.jsx']
   },
   devtool: 'inline-source-maps',
