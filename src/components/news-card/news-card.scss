@@ -11,12 +11,27 @@
   display: block;
   width: 328px;
   height: 328px;
-  margin-bottom: 20px;
 }
 
 .news-card__inner-wrapper {
+  position: relative;
+  padding-top: 20px;
   padding-left: 8px;
   padding-right: 8px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 8px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../img/arrow.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }
 
 .news-card__subtitle,
