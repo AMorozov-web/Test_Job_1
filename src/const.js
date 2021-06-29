@@ -1,5 +1,8 @@
 import PropTypes from 'prop-types';
 
+const MIN_NEWS_CARDS_LIMIT = 3;
+const NEWS_CARDS_OFFSET = 3;
+
 const RENTAL_TIME = [
   `1 час`,
   `2 часа`,
@@ -35,6 +38,8 @@ const newsPropsValidation = PropTypes.shape({
 }).isRequired;
 
 export {
+  MIN_NEWS_CARDS_LIMIT,
+  NEWS_CARDS_OFFSET,
   SORT_OPTIONS,
   RENTAL_TIME,
   cardPropsValidation,

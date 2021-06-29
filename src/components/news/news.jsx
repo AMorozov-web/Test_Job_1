@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import {NewsCard} from '../news-card/news-card';
 import {NEWS} from '../../mocks';
+import {MIN_NEWS_CARDS_LIMIT, NEWS_CARDS_OFFSET} from '../../const';
 
 import './news.scss';
 
@@ -13,7 +14,27 @@ const getNewsItemElement = (item) => {
   );
 };
 
+const getShowMoreButton = (callback) => {
+
+  return (
+    <button className="news__btn" type="button" onClick={callback}>
+      Показать еще
+    </button>
+  );
+};
+
 const News = () => {
+  const [cardsLimit, setCardsLimit] = useState(MIN_NEWS_CARDS_LIMIT);
+
+  const newsCards = NEWS.slice(0, cardsLimit);
+
+  const handleClick = useCallback(
+      () => {
+        setCardsLimit((prev) => prev + NEWS_CARDS_OFFSET);
+      },
+      [],
+  );
+
   return (
     <section className="news main__news">
       <div className="news__container">
@@ -24,11 +45,9 @@ const News = () => {
           Новости
         </h2>
         <ul className="news__list">
-          {NEWS.map(getNewsItemElement)}
+          {newsCards.map(getNewsItemElement)}
         </ul>
-        <button className="news__btn" type="button">
-          Показать еще
-        </button>
+        {cardsLimit < NEWS.length ? getShowMoreButton(handleClick) : ``}
       </div>
     </section>
   );
