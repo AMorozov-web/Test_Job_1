@@ -12,10 +12,11 @@
 .card__title {
   @include container;
   @include font-WorkSans;
-  @include font-size(20px, 600, 24px);
+  @include font-size(21px, 600, 24px);
 
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   color: $godgray;
+  letter-spacing: .3px;
 }
 
 .card__size {
@@ -23,8 +24,9 @@
   @include font-WorkSans;
   @include font-size(12px, 500, 14px);
 
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   color: $godgray;
+  letter-spacing: .3px;
 }
 
 .card__size-span {
@@ -50,6 +52,7 @@
   min-height: 22px;
   margin: 0;
   color: $amaranth;
+  letter-spacing: .3px;
   border-bottom: 1px solid $amaranth;
   background-color: $alabaster;
 }
@@ -97,7 +100,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .card__option-title,
@@ -110,13 +113,16 @@
   @include font-size(14px, 600, 18px);
 
   margin-bottom: 12px;
+  letter-spacing: .7px;
 }
 
 .card__option-price {
   @include font-RobotoSlab;
   @include font-size(12px, 500, 18px);
 
+  padding-left: 1px;
   color: $amaranth;
+  letter-spacing: .4px;
 }
 
 .card__option-input {
@@ -127,6 +133,7 @@
   display: block;
   width: 15px;
   height: 15px;
+  margin-right: -2px;
   margin-left: auto;
 }
 
@@ -159,8 +166,9 @@
   @include font-size(14px, 400, 18px);
 
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: $oslogray;
+  letter-spacing: .5px;
 }
 
 .card__rent-list {
@@ -177,7 +185,7 @@
   align-items: center;
   min-width: 53px;
   min-height: 26px;
-  margin-right: 20px;
+  margin-right: 9px;
   margin-bottom: 8px;
 }
 
@@ -198,6 +206,7 @@
   cursor: pointer;
   color: $godgray;
   background-color: $blackhaze;
+  letter-spacing: .3px;
 
   .card__rent-time-input:checked + & {
     color: $white;
@@ -227,6 +236,7 @@
 
   width: 167px;
   min-height: 40px;
+  margin-top: 2px;
   color: $white;
   background-color: $amaranth;
   border-radius: 6px;
@@ -244,7 +254,7 @@
 .card__slider {
   width: 360px;
   min-height: 238px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
   padding-left: 16px;
   padding-right: 36px;
   overflow: hidden;

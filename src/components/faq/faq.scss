@@ -35,7 +35,7 @@
   min-height: 48px;
 
   &:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
 }
 
@@ -53,13 +53,15 @@
   padding-left: 8px;
   padding-right: 8px;
   color: $godgray;
+  letter-spacing: 1px;
   background-color: $alabaster;
   background-image: url("../img/sum-close.svg");
   background-repeat: no-repeat;
-  background-position: center right 8px;
+  background-position: top 19px right 11px;
   box-shadow: 0px 4px 20px $mercury;
   border-radius: 4px;
   list-style: none;
+  cursor: pointer;
 
   &::-webkit-details-marker {
     display: none;

@@ -59,7 +59,7 @@ const Card = ({card}) => {
       <div className="card__slider">
         <Swiper
           tag={`ul`}
-          spaceBetween={7}
+          spaceBetween={6}
           navigation
           pagination
         >
@@ -105,7 +105,7 @@ const Card = ({card}) => {
       </div>
       <div className="card__wrapper">
         <p className="card__price">
-          {card.price} &#8381;
+          {card.price.toLocaleString(`ru`)} &#8381;
         </p>
         <button className="card__btn" type="button">
           Оставить заявку

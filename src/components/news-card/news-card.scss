@@ -55,6 +55,7 @@
 
   margin-bottom: 8px;
   color: $godgray;
+  letter-spacing: .7px;
 }
 
 .news-card__text {
@@ -63,6 +64,7 @@
 
   margin-bottom: 20px;
   color: $godgray;
+  letter-spacing: .4px;
 }
 
 .news-card__date {
@@ -70,4 +72,5 @@
   @include font-size(12px, 500, 14px);
 
   color: $dovegrey;
+  letter-spacing: .4px;
 }

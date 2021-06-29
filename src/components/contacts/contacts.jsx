@@ -26,7 +26,7 @@ const Contacts = () => {
             <p className="contacts__item-title contacts__item-title--address">
               Адрес
             </p>
-            <a className="contacts__item-link" href="https://goo.gl/maps/ydSfmncGcqQaXX5L9" aria-label="Get route">
+            <a className="contacts__item-link contacts__item-link--address" href="https://goo.gl/maps/ydSfmncGcqQaXX5L9" aria-label="Get route">
               109382, Москва, пр. Егорьевский, д.2а, стр.10 въезд на машине только с улицы Люблинская
             </a>
           </li>
