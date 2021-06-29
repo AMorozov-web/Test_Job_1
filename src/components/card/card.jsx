@@ -1,11 +1,18 @@
 import React from 'react';
+import SwiperCore, {Navigation, Pagination, A11y} from 'swiper';
+import {Swiper, SwiperSlide} from 'swiper/react';
 import {
   cardPropsValidation,
   RENTAL_TIME,
 } from '../../const';
 import {CARD_OPTIONS} from '../../mocks';
 
+import 'swiper/swiper.scss';
+import 'swiper/components/navigation/navigation.scss';
+import 'swiper/components/pagination/pagination.scss';
 import './card.scss';
+
+SwiperCore.use([Navigation, Pagination, A11y]);
 
 const getCardOptionElement = (option) => {
   return (
@@ -45,7 +52,19 @@ const Card = ({card}) => {
   return (
     <article className="card">
       <div className="card__slider">
-        slider
+        <Swiper
+          centeredSlides={true}
+          tag={`ul`}
+          spaceBetween={16}
+          slidesPerView={1}
+          navigation
+          pagination
+        >
+          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
+          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
+          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
+          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
+        </Swiper>
       </div>
       <h3 className="card__title">
         {card.title}
