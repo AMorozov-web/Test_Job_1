@@ -10,8 +10,18 @@
 }
 
 .card__slider {
+  width: 360px;
   min-height: 238px;
   margin-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 36px;
+  overflow: hidden;
+}
+
+.card-slide {
+  display: block;
+  width: 296px;
+  height: 222px;
 }
 
 .card__title {
@@ -243,5 +253,61 @@
     color: $amaranth;
     background-color: $white;
     border: 1px solid $amaranth;
+  }
+}
+
+.swiper-container {
+  margin-left: 0;
+  margin-right: 0;
+  overflow: visible;
+}
+
+.swiper-slide,
+.swiper-slide-active,
+.swiper-slide-next,
+.swiper-slide-prev {
+  height: 222px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+}
+
+.swiper-button-prev {
+  left: 4px;
+
+  &:after {
+    font-size: 25px;
+  }
+}
+
+.swiper-button-next {
+  right: 16px;
+
+  &:after {
+    font-size: 25px;
+  }
+}
+
+.swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  width: 328px;
+  bottom: -18px;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 4px;
+  background-color: $mischka;
+  border-radius: 10px;
+  opacity: unset;
+  transition: all 0.5s;
+
+  &-active {
+    background-color: $amaranth;
   }
 }

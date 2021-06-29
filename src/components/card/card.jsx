@@ -53,17 +53,23 @@ const Card = ({card}) => {
     <article className="card">
       <div className="card__slider">
         <Swiper
-          centeredSlides={true}
           tag={`ul`}
-          spaceBetween={16}
-          slidesPerView={1}
+          spaceBetween={7}
           navigation
           pagination
         >
-          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
-          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
-          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
-          <SwiperSlide tag={`li`}><img width="296" height="222" src="img/photo-cabin.png" alt="" /></SwiperSlide>
+          <SwiperSlide tag={`li`}>
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide tag={`li`}>
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide tag={`li`}>
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+          </SwiperSlide>
+          <SwiperSlide tag={`li`}>
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+          </SwiperSlide>
         </Swiper>
       </div>
       <h3 className="card__title">
