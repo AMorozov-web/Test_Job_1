@@ -34,11 +34,16 @@ const getCardOptionElement = (option) => {
   );
 };
 
-const getRentalTimeElement = (time, title) => {
+const getRentalTimeElement = (time, title, checked = false) => {
   return (
     <li key={time} className="card__rent-item">
       <label className="card__rent-time">
-        <input className="card__rent-time-input visually-hidden" type="radio" name={`rent-time-${title}`} />
+        <input
+          className="card__rent-time-input visually-hidden"
+          type="radio"
+          name={`rent-time-${title}`}
+          defaultChecked={checked}
+        />
         <span className="card__rent-time-span">
           {time}
         </span>
@@ -91,7 +96,11 @@ const Card = ({card}) => {
           Укажите время аренды
         </p>
         <ul className="card__rent-list">
-          {RENTAL_TIME.map((time) => getRentalTimeElement(time, card.title))}
+          {
+            RENTAL_TIME.map((time, i) => {
+              return i === 0 ? getRentalTimeElement(time, card.title, true) : getRentalTimeElement(time, card.title);
+            })
+          }
         </ul>
       </div>
       <div className="card__wrapper">
