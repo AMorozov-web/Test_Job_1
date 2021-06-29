@@ -9,21 +9,6 @@
   min-height: 687px;
 }
 
-.card__slider {
-  width: 360px;
-  min-height: 238px;
-  margin-bottom: 17px;
-  padding-left: 16px;
-  padding-right: 36px;
-  overflow: hidden;
-}
-
-.card-slide {
-  display: block;
-  width: 296px;
-  height: 222px;
-}
-
 .card__title {
   @include container;
   @include font-WorkSans;
@@ -254,6 +239,21 @@
     background-color: $white;
     border: 1px solid $amaranth;
   }
+}
+
+.card__slider {
+  width: 360px;
+  min-height: 238px;
+  margin-bottom: 17px;
+  padding-left: 16px;
+  padding-right: 36px;
+  overflow: hidden;
+}
+
+.card-slide {
+  display: block;
+  width: 296px;
+  height: 222px;
 }
 
 .swiper-container {
