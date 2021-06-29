@@ -64,16 +64,16 @@ const Card = ({card}) => {
           pagination
         >
           <SwiperSlide tag={`li`}>
-            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="Photo cabin" />
           </SwiperSlide>
           <SwiperSlide tag={`li`}>
-            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="Photo cabin" />
           </SwiperSlide>
           <SwiperSlide tag={`li`}>
-            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="Photo cabin" />
           </SwiperSlide>
           <SwiperSlide tag={`li`}>
-            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="" />
+            <img className="card__slide" width="296" height="222" src="img/photo-cabin.png" alt="Photo cabin" />
           </SwiperSlide>
         </Swiper>
       </div>
